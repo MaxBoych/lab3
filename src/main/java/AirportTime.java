@@ -15,7 +15,8 @@ public class AirportTime {
 
     private static final int ORIGIN_AIRPORT_ID = 11;
     private static final int DEST_AIRPORT_ID = 14;
-    private static final int 
+    private static final int ARR_DELAY_NEW = 18;
+    private static final int  = 18;
 
     public static void main(String[] args) {
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
