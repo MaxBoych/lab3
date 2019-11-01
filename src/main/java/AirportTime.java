@@ -16,7 +16,7 @@ public class AirportTime {
     private static final int ORIGIN_AIRPORT_ID = 11;
     private static final int DEST_AIRPORT_ID = 14;
     private static final int ARR_DELAY_NEW = 18;
-    private static final int  = 18;
+    private static final int CANCELLED = 19;
 
     public static void main(String[] args) {
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
@@ -31,7 +31,8 @@ public class AirportTime {
                             new Tuple4<>(values[
                                     values[ORIGIN_AIRPORT_ID]],
                                     values[DEST_AIRPORT_ID],
-                                    )
+                                    values[ARR_DELAY_NEW],
+                                    values[CANCELLED])
                         }
                 );
     }
