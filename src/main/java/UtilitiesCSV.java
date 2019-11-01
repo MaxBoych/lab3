@@ -8,7 +8,9 @@ public class UtilitiesCSV {
 
     private static final int DEST_AIRPORT_INDEX = 14;
 
-    public static String[]
+    public static String[] parseAndFilter(String line) {
+        return removeQuotes(filterFlightData(parseFlightData(line)));
+    }
 
     private static String[] parseFlightData(String line) {
         return line.split(",");
@@ -22,12 +24,12 @@ public class UtilitiesCSV {
         }
     }
 
-    /*static String[] removeQuotes(String[] filtered) {
+    private static String[] removeQuotes(String[] filtered) {
         int size = filtered.length;
         for (int i = 0; i < size; i++) {
             filtered[i] = filtered[i].replaceAll("\"", "");
         }
 
         return filtered;
-    }*/
+    }
 }
