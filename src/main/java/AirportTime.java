@@ -11,6 +11,6 @@ public class AirportTime {
     public static void main(String[] args) {
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
-        
+
     }
 }
