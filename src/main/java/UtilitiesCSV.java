@@ -6,40 +6,10 @@ public class UtilitiesCSV {
     private static final int FLIGHT_KEY = 1;
     private static final int FIRST_ITEM = 0;
 
-    static String[] parse(String line, int keyData) {
-        if (keyData == AIRPORT_KEY) {
-            return parseAirportData(line);
-        } else if (keyData == FLIGHT_KEY) {
-            return parseFlightData(line);
-        } else {
-            return EMPTY;
-        }
-    }
+    private static final int DEST_AIRPORT_INDEX = 14;
 
-    private static String[] parseAirportData(String line) {
-        return line.split(",", 2);
-    }
-
-    private static String[] parseFlightData(String line) {
+    public static String[] parseFlightData(String line) {
         return line.split(",");
-    }
-
-    static String[] filter(String[] parsed, int keyData) {
-        if (keyData == AIRPORT_KEY) {
-            return filterAirportData(parsed);
-        } else if (keyData == FLIGHT_KEY) {
-            return filterFlightData(parsed);
-        } else {
-            return EMPTY;
-        }
-    }
-
-    private static String[] filterAirportData(String[] parsed) {
-        if (parsed[FIRST_ITEM].equals("Code")) {
-            return EMPTY;
-        } else {
-            return parsed;
-        }
     }
 
     private static String[] filterFlightData(String[] parsed) {
