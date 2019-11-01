@@ -36,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AirportTime.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+            <state relative-caret-position="437">
+              <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,14 +48,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/UtilitiesCSV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="184">
+              <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
               <folding>
-                <element signature="e#408#409#0" expanded="true" />
-                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#171#172#0" expanded="true" />
+                <element signature="e#247#248#0" expanded="true" />
                 <element signature="e#530#531#0" expanded="true" />
                 <element signature="e#568#569#0" expanded="true" />
               </folding>
@@ -73,8 +73,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/AirportReducer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/UtilitiesCSV.java" />
         <option value="$PROJECT_DIR$/src/main/java/AirportTime.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UtilitiesCSV.java" />
       </list>
     </option>
   </component>
@@ -152,12 +152,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572628026754</updated>
-      <workItem from="1572628030231" duration="4133000" />
+      <workItem from="1572628030231" duration="4595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4133000" />
+    <option name="totallyTimeSpent" value="4595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="960" height="988" extended-state="4" />
@@ -168,7 +168,7 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14004377" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25273523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -206,19 +206,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/UtilitiesCSV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#408#409#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -228,10 +215,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AirportTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="69" lean-forward="true" selection-start-line="18" selection-start-column="69" selection-end-line="18" selection-end-column="69" />
+        <state relative-caret-position="437">
+          <caret line="19" column="81" selection-start-line="19" selection-start-column="81" selection-end-line="19" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/UtilitiesCSV.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding>
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#247#248#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
           </folding>
         </state>
       </provider>

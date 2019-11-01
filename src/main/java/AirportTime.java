@@ -17,5 +17,6 @@ public class AirportTime {
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
 
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
+        JavaRDD<String[]> flightsFiltered = UtilitiesCSV.parseAndFilter(flights);
     }
 }
