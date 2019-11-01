@@ -15,6 +15,7 @@ public class AirportTime {
 
     private static final int ORIGIN_AIRPORT_ID = 11;
     private static final int DEST_AIRPORT_ID = 14;
+    private static final int 
 
     public static void main(String[] args) {
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
@@ -26,7 +27,10 @@ public class AirportTime {
         JavaRDD<Tuple4<String, String, String, String>> flightsPairs = flightsFiltered
                 .mapToPair(
                         values -> {
-                            new Tuple4<>(values[])
+                            new Tuple4<>(values[
+                                    values[ORIGIN_AIRPORT_ID]],
+                                    values[DEST_AIRPORT_ID],
+                                    )
                         }
                 );
     }
