@@ -27,6 +27,7 @@ public class AirportTime {
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
         JavaRDD<String[]> flightsFiltered = flights.map(UtilitiesCSV::parseAndFilter);
 
+        System.out.println();
         JavaPairRDD<Tuple2<String, String>, Tuple2<String, String>> flightsPairs = flightsFiltered
                 .mapToPair(
                         values -> new Tuple2<>(
