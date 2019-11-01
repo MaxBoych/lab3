@@ -13,8 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -27,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/AirportApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="563">
-              <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,16 +140,15 @@
       <option name="presentableId" value="Default" />
       <updated>1572639175707</updated>
       <workItem from="1572639179889" duration="542000" />
-      <workItem from="1572639874690" duration="2236000" />
+      <workItem from="1572639874690" duration="2844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2778000" />
+    <option name="totallyTimeSpent" value="3386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="960" height="988" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18490154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -201,7 +199,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/AirportApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
-          <caret line="27" column="47" lean-forward="true" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
