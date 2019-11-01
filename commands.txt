@@ -1,5 +1,0 @@
-hadoop fs -rm -r -f /user/max/output
-mvn package
-export HADOOP_CLASSPATH=target/lab2-1.0-SNAPSHOT.jar
-hadoop AirportTime airports.csv flights.csv output
-hadoop fs -copyToLocal output
