@@ -14,7 +14,7 @@ public class AirportTime {
     private static final String FLIGHTS_CSV = "/home/max/gitwatch/lab3/flights.csv";
 
     private static final int ORIGIN_AIRPORT_ID = 11;
-    private static final int  = 11;
+    private static final int DEST_AIRPORT_ID = 14;
 
     public static void main(String[] args) {
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
