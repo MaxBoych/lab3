@@ -31,6 +31,6 @@ public class AirportApp {
                         )
                 );
 
-        
+        JavaRDD<Tuple2<String, String>, FlightInfo> flightsPairsSerializable = flightsPairs.reduceByKey(FlightSerializable::reduceByKey);
     }
 }
