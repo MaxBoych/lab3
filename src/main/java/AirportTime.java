@@ -5,8 +5,10 @@ import org.apache.hadoop.mapreduce.lib.input.MultipleInputs;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import scala.Tuple2;
 import scala.Tuple4;
 
 public class AirportTime {
@@ -25,15 +27,12 @@ public class AirportTime {
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
         JavaRDD<String[]> flightsFiltered = flights.map(UtilitiesCSV::parseAndFilter);
 
-        JavaRDD<Tuple4<String, String, String, String>> flightsPairs = flightsFiltered
+        JavaPairRDD<Tuple2<String, String>, Tuple2<String, String>> flightsPairs = flightsFiltered
                 .mapToPair(
-                        values -> {
-                            new Tuple4<>(values[
-                                    values[ORIGIN_AIRPORT_ID]],
-                                    values[DEST_AIRPORT_ID],
-                                    values[ARR_DELAY_NEW],
-                                    values[CANCELLED])
-                        }
+                        values -> new Tuple2<>(
+                                new Tuple2<>(values[ORIGIN_AIRPORT_ID], values[DEST_AIRPORT_ID]),
+                                new Tuple2<>(values[ARR_DELAY_NEW], values[CANCELLED])
+                        )
                 );
     }
 }
