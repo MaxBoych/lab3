@@ -30,5 +30,7 @@ public class AirportApp {
                                 new FlightInfo(values[ARR_DELAY_NEW], values[CANCELLED])
                         )
                 );
+
+        
     }
 }
