@@ -27,7 +27,7 @@ public class AirportApp {
 
                         values -> new Tuple2<>(
                                 new Tuple2<>(values[ORIGIN_AIRPORT_ID], values[DEST_AIRPORT_ID]),
-                                new FlightInfo(Double.parseDouble(values[ARR_DELAY_NEW]), Double.parseDouble(values[CANCELLED]))
+                                new FlightInfo(values[ARR_DELAY_NEW], values[CANCELLED])
                         )
                 );
     }

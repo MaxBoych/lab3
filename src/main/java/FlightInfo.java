@@ -3,7 +3,10 @@ public class FlightInfo {
     private double delayed;
     private double cancelled;
 
-    public FlightInfo(double delayed, double cancelled) {
+    public FlightInfo(String delayed, String cancelled) {
+        if (delayed.equals("")) {
+            
+        }
         this.delayed = delayed;
         this.cancelled = cancelled;
     }
