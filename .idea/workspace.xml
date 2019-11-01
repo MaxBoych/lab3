@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca6fe414-a5b7-4925-a165-7bdef102575d" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Qwety/Qwety.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightInfo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/FlightInfo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+            <state relative-caret-position="161">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -154,12 +152,12 @@
       <option name="presentableId" value="Default" />
       <updated>1572639175707</updated>
       <workItem from="1572639179889" duration="542000" />
-      <workItem from="1572639874690" duration="4183000" />
+      <workItem from="1572639874690" duration="4892000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4725000" />
+    <option name="totallyTimeSpent" value="5434000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="960" height="988" extended-state="4" />
@@ -223,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FlightInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+        <state relative-caret-position="161">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
