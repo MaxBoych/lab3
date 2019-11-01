@@ -1,18 +1,18 @@
 public class FlightInfo {
 
-    private int delayed;
-    private int cancelled;
+    private double delayed;
+    private double cancelled;
 
-    public FlightInfo(int delayed, int cancelled) {
+    public FlightInfo(double delayed, double cancelled) {
         this.delayed = delayed;
         this.cancelled = cancelled;
     }
 
-    public int getDelayed() {
+    public double getDelayed() {
         return this.delayed;
     }
 
-    public int getCancelled() {
+    public double getCancelled() {
         return this.cancelled;
     }
 }

@@ -22,12 +22,12 @@ public class AirportApp {
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
         JavaRDD<String[]> flightsFiltered = flights.map(UtilitiesCSV::parseAndFilter);
 
-        JavaPairRDD<Tuple2<String, String>, Tuple2<String, String>> flightsPairs = flightsFiltered
+        JavaPairRDD<Tuple2<String, String>, FlightInfo> flightsPairs = flightsFiltered
                 .mapToPair(
 
                         values -> new Tuple2<>(
                                 new Tuple2<>(values[ORIGIN_AIRPORT_ID], values[DEST_AIRPORT_ID]),
-                                new FlightInfo(Integer.parseInt(values[ARR_DELAY_NEW]), values[CANCELLED])
+                                new FlightInfo(Double.parseDouble(values[ARR_DELAY_NEW]), Double.parseDouble(values[CANCELLED]))
                         )
                 );
     }
