@@ -10,12 +10,12 @@ import org.apache.spark.api.java.JavaSparkContext;
 
 public class AirportTime {
 
-    
+    private static final String FLIGHTS_CSV = "/home/max/gitwatch/lab3/flights.csv";
 
     public static void main(String[] args) {
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
 
-        JavaRDD<String[]> flights = sparkContext.textFile()
+        JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
     }
 }
