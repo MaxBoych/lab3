@@ -7,6 +7,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import scala.Tuple4;
 
 public class AirportTime {
 
@@ -18,6 +19,12 @@ public class AirportTime {
 
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
         JavaRDD<String[]> flightsFiltered = flights.map(UtilitiesCSV::parseAndFilter);
-        
+
+        JavaRDD<Tuple4<String, String, String, String>> flightsPairs = flightsFiltered
+                .mapToPair(
+                        values -> {
+                            new Tuple4<>(values[])
+                        }
+                );
     }
 }
