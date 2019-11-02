@@ -25,6 +25,12 @@ public class AirportApp {
             System.exit(-1);
         }
 
+
+        System.out.println();
+        System.out.println();
+        System.out.println("@@@ " + args[2]);
+        System.out.println();
+
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
 
@@ -87,6 +93,5 @@ public class AirportApp {
                 );
 
         result.saveAsTextFile(args[2]);
-        System.out.println("%%%%% " + args[2]);
     }
 }
