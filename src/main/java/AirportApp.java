@@ -25,7 +25,7 @@ public class AirportApp {
         JavaRDD<String[]> flightsFiltered = flights.map(UtilitiesCSV::parseAndFilter);
 
         JavaPairRDD<Tuple2<String, String>, FlightInfo> flightsPairs = flightsFiltered
-                .mapToPair(
+                .flatMapToPair(
 
                         values -> new Tuple2<>(
                                 new Tuple2<>(values[ORIGIN_AIRPORT_ID], values[DEST_AIRPORT_ID]),
