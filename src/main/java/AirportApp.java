@@ -46,6 +46,6 @@ public class AirportApp {
 
 
         JavaRDD<String> airports = sparkContext.textFile(AIRPORTS_CSV);
-        
+
     }
 }
