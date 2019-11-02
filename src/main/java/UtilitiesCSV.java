@@ -36,7 +36,7 @@ public class UtilitiesCSV {
 
     private static String[] filterAirportData(String[] parsed) {
         if (parsed[FIRST_ITEM].equals("Code")) {
-            return new String[2];
+            return EMPTY;
         } else {
             return parsed;
         }
@@ -54,7 +54,7 @@ public class UtilitiesCSV {
 
     private static String[] removeQuotes(String[] filtered) {
         if (filtered.length == 0) {
-            return new String[2];
+            return EMPTY;
         } else {
             int size = filtered.length;
             for (int i = 0; i < size; i++) {
