@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca6fe414-a5b7-4925-a165-7bdef102575d" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Qwety/Qwety.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlightSerializable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlightSerializable.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/AirportApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+            <state relative-caret-position="565">
+              <caret line="29" column="112" lean-forward="true" selection-start-line="29" selection-start-column="112" selection-end-line="29" selection-end-column="112" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,18 +177,18 @@
       <option name="presentableId" value="Default" />
       <updated>1572639175707</updated>
       <workItem from="1572639179889" duration="542000" />
-      <workItem from="1572639874690" duration="9314000" />
+      <workItem from="1572639874690" duration="9603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9856000" />
+    <option name="totallyTimeSpent" value="10145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="960" height="990" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603939" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.101750545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -266,8 +264,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AirportApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+        <state relative-caret-position="565">
+          <caret line="29" column="112" lean-forward="true" selection-start-line="29" selection-start-column="112" selection-end-line="29" selection-end-column="112" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
