@@ -33,7 +33,8 @@ public class AirportApp {
 
 
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
-        JavaRDD<String[]> flightsFiltered = flights.map(line -> UtilitiesCSV.parseAndFilter(line, 1));
+        JavaRDD<String[]> flightsFiltered = flights
+                .map(line -> UtilitiesCSV.parseAndFilter(line, 1));
 
         JavaPairRDD<Tuple2<String, String>, FlightSerializable> flightsPairs = flightsFiltered
                 .mapToPair(
@@ -46,13 +47,15 @@ public class AirportApp {
                         }
                 );
 
-        JavaPairRDD<Tuple2<String, String>, FlightSerializable> flightsPairsSerializable = flightsPairs.reduceByKey(FlightSerializable::reduceFlights);
+        JavaPairRDD<Tuple2<String, String>, FlightSerializable> flightsPairsSerializable = flightsPairs
+                .reduceByKey(FlightSerializable::reduceFlights);
 
 
 
 
         JavaRDD<String> airports = sparkContext.textFile(AIRPORTS_CSV);
-        JavaRDD<String[]> airportsFiltered = airports.map(line -> UtilitiesCSV.parseAndFilter(line, 0));
+        JavaRDD<String[]> airportsFiltered = airports.map(line -> UtilitiesCSV
+                .parseAndFilter(line, 0));
 
         JavaPairRDD<String, String> airportsPairs = airportsFiltered
                 .mapToPair(
@@ -62,7 +65,11 @@ public class AirportApp {
                         )
                 );
 
-        Map<String, String> airportsMap = airportsPairs.collectAsMap();
-        final Broadcast<Map<String, String>> airportsB
+        Map<String, String> airportsMap = airportsPairs
+                .collectAsMap();
+        final Broadcast<Map<String, String>> airportsBroadcasted = sparkContext
+                .broadcast(airportsMap);
+        
+
     }
 }
