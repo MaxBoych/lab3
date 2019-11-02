@@ -15,6 +15,20 @@ public class FlightSerializable implements Serializable {
         this.flightsCancelled = flightsCancelled;
     }
 
+    public FlightSerializable(FlightInfo fl) {
+        if (fl.getDelayed() == 0) {
+            this.delayMaxValue = 0;
+            this.flightsDelayed = 0;
+        } else {
+            this.delayMaxValue = fl.getDelayed();
+            this.flightsDelayed = 1;
+        }
+
+        this.flightsCancelled = fl.getCancelled();
+
+        this.flightsAmount = 1;
+    }
+
     public static FlightSerializable reduceFlights(FlightSerializable fs1, FlightSerializable fs2) {
         //FlightSerializable fs1 = createObject(flight1);
         //FlightSerializable fs2 = createObject(flight2);
@@ -26,8 +40,6 @@ public class FlightSerializable implements Serializable {
                 fs1.getFlightsCancelled() + fs2.getFlightsCancelled()
         );
     }
-
-    public 
 
     /*private static FlightSerializable createObject(FlightInfo flight) {
         int flightsDelayedSupport = flight.getDelayed() > 0 ? 1 : 0;
