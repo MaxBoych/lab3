@@ -98,6 +98,6 @@ public class AirportApp {
                                 (pair._2.getFlightsCancelled() / pair._2.getFlightsAmount()) * 100 + " %\n"
                 );
 
-        result.saveAsTextFile("output.txt");
+        //result.saveAsTextFile("output.txt");
     }
 }
