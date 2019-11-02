@@ -87,5 +87,6 @@ public class AirportApp {
                 );
 
         result.saveAsTextFile(args[2]);
+        
     }
 }
