@@ -2,7 +2,7 @@ public class UtilitiesCSV {
     private static final String[] EMPTY = {};
     private static final int FIRST_ITEM = 0;
 
-    public static String[] parseAndFilter(String line) {
+    public static String[] parseAndFilter(String line, int keyData) {
         return removeQuotes(filterFlightData(parseFlightData(line)));
     }
 
