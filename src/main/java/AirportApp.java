@@ -27,10 +27,10 @@ public class AirportApp {
 
                         values -> new Tuple2<>(
                                 new Tuple2<>(values[ORIGIN_AIRPORT_ID], values[DEST_AIRPORT_ID]),
-                                new FlightInfo(values[ARR_DELAY_NEW], values[CANCELLED])
+                                new FlightSerializable(new FlightInfo(values[ARR_DELAY_NEW], values[CANCELLED]))
                         )
                 );
 
-        JavaRDD<Tuple2<String, String>, FlightSerializable> flightsPairsSerializable = flightsPairs.reduceByKey(FlightSerializable::reduceFlights);
+        JavaPairRDD<Tuple2<String, String>, FlightSerializable> flightsPairsSerializable = flightsPairs.reduceByKey(FlightSerializable::reduceFlights);
     }
 }
