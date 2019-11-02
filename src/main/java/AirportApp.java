@@ -77,6 +77,8 @@ public class AirportApp {
                                 " to " +
                                 airportsBroadcasted.value().get(pair._1._2) +
                                 " ||| " +
+                                "delayMaxValue: " +
+                                pair._2.getDelayMaxValue() +
                                 ""
                 )
     }
