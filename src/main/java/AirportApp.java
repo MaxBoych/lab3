@@ -21,22 +21,22 @@ public class AirportApp {
     private static final int AIRPORT_NAME = 1;
 
     public static void main(String[] args) {
-        if (args.length != 3) {
+        /*if (args.length != 3) {
             System.exit(-1);
-        }
+        }*/
 
 
-        System.out.println();
+        /*System.out.println();
         System.out.println();
         System.out.println("@@@ " + args[2]);
-        System.out.println();
+        System.out.println();*/
 
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
 
 
         //flights
-        JavaRDD<String> flights = sparkContext.textFile(args[0]);
+        JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
         JavaRDD<String[]> flightsFiltered = flights
                 .map(line -> UtilitiesCSV.parseAndFilter(line, 1));
 
@@ -57,7 +57,7 @@ public class AirportApp {
 
 
         //airports
-        JavaRDD<String> airports = sparkContext.textFile(args[1]);
+        JavaRDD<String> airports = sparkContext.textFile(AIRPORTS_CSV);
         JavaRDD<String[]> airportsFiltered = airports.map(line -> UtilitiesCSV
                 .parseAndFilter(line, 0));
 
@@ -92,6 +92,6 @@ public class AirportApp {
                                 (pair._2.getFlightsCancelled() / pair._2.getFlightsAmount()) * 100 + " %\n"
                 );
 
-        result.saveAsTextFile(args[2]);
+        result.saveAsTextFile(args[0]);
     }
 }
