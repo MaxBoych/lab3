@@ -26,7 +26,7 @@ public class AirportApp {
 
 
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
-        JavaRDD<String[]> flightsFiltered = flights.map(UtilitiesCSV::parseAndFilter());
+        JavaRDD<String[]> flightsFiltered = flights.map(line -> UtilitiesCSV.parseAndFilter(line, 0));
 
 
         JavaPairRDD<Tuple2<String, String>, FlightSerializable> flightsPairs = flightsFiltered
