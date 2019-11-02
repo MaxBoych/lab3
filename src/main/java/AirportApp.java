@@ -3,6 +3,7 @@ import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
+import org.spark_project.jetty.util.log.Log;
 import scala.Tuple2;
 
 import java.util.Map;
@@ -26,10 +27,12 @@ public class AirportApp {
         }*/
 
 
-        /*System.out.println();
+        System.out.println();
         System.out.println();
         System.out.println("@@@ " + args[2]);
-        System.out.println();*/
+        System.out.println();
+
+        Log.getLogger("@@@ " + args[2]);
 
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
