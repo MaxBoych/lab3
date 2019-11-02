@@ -72,7 +72,12 @@ public class AirportApp {
 
         JavaRDD<String> result = flightsPairsSerializable
                 .map(
-                        pair -> airportsBroadcasted.value().get(pair._1._1)
+                        pair -> "from " +
+                                airportsBroadcasted.value().get(pair._1._1) +
+                                " to " +
+                                airportsBroadcasted.value().get(pair._1._2) +
+                                " ||| " +
+                                ""
                 )
     }
 }
