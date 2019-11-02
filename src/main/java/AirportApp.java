@@ -1,3 +1,4 @@
+import com.sun.deploy.uitoolkit.ui.LoggerConsole;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
@@ -7,6 +8,7 @@ import org.spark_project.jetty.util.log.Log;
 import scala.Tuple2;
 
 import java.util.Map;
+import java.util.logging.Logger;
 
 public class AirportApp {
 
@@ -29,10 +31,11 @@ public class AirportApp {
 
         System.out.println();
         System.out.println();
-        System.out.println("@@@ " + args[2]);
+        System.out.println("@@@ " + args[0]);
         System.out.println();
 
-        Log.getLogger("@@@ " + args[2]);
+        Log.getLogger("@@@ " + args[0]);
+        Logger.getLogger("@@@ " + args[0]);
 
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
