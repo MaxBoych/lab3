@@ -69,7 +69,10 @@ public class AirportApp {
                 .collectAsMap();
         final Broadcast<Map<String, String>> airportsBroadcasted = sparkContext
                 .broadcast(airportsMap);
-        
 
+        JavaRDD<String> result = flightsPairsSerializable
+                .map(
+                        pair -> 
+                )
     }
 }
