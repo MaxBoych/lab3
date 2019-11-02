@@ -1,12 +1,9 @@
-import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
-import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
 import scala.Tuple2;
-import scala.Tuple4;
 
 import java.util.Map;
 
@@ -24,14 +21,15 @@ public class AirportApp {
     private static final int AIRPORT_NAME = 1;
 
     public static void main(String[] args) {
+        if (args.length != 1) {
+            System.exit(-1);
+        }
 
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
 
 
-
-
-
+        //flights
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
         JavaRDD<String[]> flightsFiltered = flights
                 .map(line -> UtilitiesCSV.parseAndFilter(line, 1));
@@ -52,7 +50,7 @@ public class AirportApp {
 
 
 
-
+        //airports
         JavaRDD<String> airports = sparkContext.textFile(AIRPORTS_CSV);
         JavaRDD<String[]> airportsFiltered = airports.map(line -> UtilitiesCSV
                 .parseAndFilter(line, 0));
@@ -88,6 +86,6 @@ public class AirportApp {
                                 (pair._2.getFlightsCancelled() / pair._2.getFlightsAmount()) * 100 + " %\n"
                 );
 
-        
+        result.saveAsTextFile(args[0]);
     }
 }
