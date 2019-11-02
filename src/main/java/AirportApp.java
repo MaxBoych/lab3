@@ -21,7 +21,7 @@ public class AirportApp {
     private static final int AIRPORT_NAME = 1;
 
     public static void main(String[] args) {
-        if (args.length != 1) {
+        if (args.length != 2) {
             System.exit(-1);
         }
 
