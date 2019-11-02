@@ -8,7 +8,7 @@ public class UtilitiesCSV {
 
     static String[] parseAndFilter(String line, int keyData) {
         if (keyData == AIRPORT_KEY) {
-            return removeQuotes(filterAirportData(parseAirportData(line)));
+            return filterAirportData(parseAirportData(line));
         } else if (keyData == FLIGHT_KEY) {
             return removeQuotes(filterFlightData(parseFlightData(line)));
         } else {
