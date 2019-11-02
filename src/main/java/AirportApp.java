@@ -71,7 +71,7 @@ public class AirportApp {
                 );
 
         Map<String, String> airportsMap = airportsPairs
-                .collectAsMap();
+                .filter(pair -> pair != null).collectAsMap();
         final Broadcast<Map<String, String>> airportsBroadcasted = sparkContext
                 .broadcast(airportsMap);
 
