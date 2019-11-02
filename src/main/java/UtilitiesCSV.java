@@ -1,5 +1,5 @@
 public class UtilitiesCSV {
-    private static final String[] EMPTY = new String[2];
+    private static final String[] EMPTY = {};
     private static final int CANCELED = 19;
     private static final int DELAYED = 18;
     private static final int AIRPORT_KEY = 0;
@@ -36,7 +36,7 @@ public class UtilitiesCSV {
 
     private static String[] filterAirportData(String[] parsed) {
         if (parsed[FIRST_ITEM].equals("Code")) {
-            return EMPTY;
+            return new String[2];
         } else {
             return parsed;
         }
@@ -53,11 +53,15 @@ public class UtilitiesCSV {
     }
 
     private static String[] removeQuotes(String[] filtered) {
-        int size = filtered.length;
-        for (int i = 0; i < size; i++) {
-            filtered[i] = filtered[i].replaceAll("\"", "");
-        }
+        if (filtered.length == 0) {
+            return new String[2];
+        } else {
+            int size = filtered.length;
+            for (int i = 0; i < size; i++) {
+                filtered[i] = filtered[i].replaceAll("\"", "");
+            }
 
-        return filtered;
+            return filtered;
+        }
     }
 }
