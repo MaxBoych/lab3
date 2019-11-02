@@ -46,5 +46,6 @@ public class AirportApp {
 
         JavaRDD<String> airports = sparkContext.textFile(AIRPORTS_CSV);
         JavaRDD<String[]> airportsFiltered = airports.map(line -> UtilitiesCSV.parseAndFilter(line, 0));
+        
     }
 }
