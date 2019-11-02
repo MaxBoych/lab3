@@ -8,9 +8,9 @@ public class UtilitiesCSV {
 
     static String[] parseAndFilter(String line, int keyData) {
         if (keyData == AIRPORT_KEY) {
-            return filterAirportData(parseAirportData(line));
+            return removeQuotes(filterAirportData(parseAirportData(line)));
         } else if (keyData == FLIGHT_KEY) {
-            return parseFlightData(line);
+            return removeQuotes(filterFlightData(parseFlightData(line)));
         } else {
             return EMPTY;
         }
@@ -24,7 +24,7 @@ public class UtilitiesCSV {
         return line.split(",");
     }
 
-    static String[] filter(String[] parsed, int keyData) {
+    /*static String[] filter(String[] parsed, int keyData) {
         if (keyData == AIRPORT_KEY) {
             return filterAirportData(parsed);
         } else if (keyData == FLIGHT_KEY) {
@@ -32,7 +32,7 @@ public class UtilitiesCSV {
         } else {
             return EMPTY;
         }
-    }
+    }*/
 
     private static String[] filterAirportData(String[] parsed) {
         if (parsed[FIRST_ITEM].equals("Code")) {
@@ -52,7 +52,7 @@ public class UtilitiesCSV {
         }
     }
 
-    static String[] removeQuotes(String[] filtered) {
+    private static String[] removeQuotes(String[] filtered) {
         int size = filtered.length;
         for (int i = 0; i < size; i++) {
             filtered[i] = filtered[i].replaceAll("\"", "");
