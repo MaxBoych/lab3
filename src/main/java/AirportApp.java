@@ -29,7 +29,7 @@ public class AirportApp {
 
                         values -> new Tuple2<>(
                                 new Tuple2<>(values[ORIGIN_AIRPORT_ID], values[DEST_AIRPORT_ID]),
-                                new FlightSerializable(new FlightInfo("1", "2"))
+                                new FlightSerializable(new FlightInfo(values[ARR_DELAY_NEW], values[CANCELLED]))
                         )
                 );
 
