@@ -6,6 +6,7 @@ import org.apache.spark.broadcast.Broadcast;
 import scala.Tuple2;
 
 import java.util.Map;
+import java.util.Objects;
 
 public class AirportApp {
 
@@ -71,7 +72,7 @@ public class AirportApp {
                 );
 
         Map<String, String> airportsMap = airportsPairs
-                .filter(pair -> pair != null).collectAsMap();
+                .filter(Objects::nonNull).collectAsMap();
         final Broadcast<Map<String, String>> airportsBroadcasted = sparkContext
                 .broadcast(airportsMap);
 
