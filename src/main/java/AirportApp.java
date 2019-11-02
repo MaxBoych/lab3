@@ -16,8 +16,6 @@ public class AirportApp {
     private static final int CANCELLED = 19;
     public static void main(String[] args) {
 
-        FlightSerializable f = new FlightSerializable(new FlightInfo("1", "2"));
-
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
 
@@ -25,12 +23,11 @@ public class AirportApp {
         JavaRDD<String[]> flightsFiltered = flights.map(UtilitiesCSV::parseAndFilter);
 
 
-        JavaPairRDD<Tuple2<String, String>, FlightInfo> flightsPairs = flightsFiltered
+        JavaPairRDD<Tuple2<String, String>, FlightSerializable> flightsPairs = flightsFiltered
                 .mapToPair(
-
                         values -> {
                             FlightInfo flightInfo = new FlightInfo(values[ARR_DELAY_NEW], values[CANCELLED]);
-                            new Tuple2<>(
+                            return new Tuple2<>(
                                     new Tuple2<>(values[ORIGIN_AIRPORT_ID], values[DEST_AIRPORT_ID]),
                                     new FlightSerializable(flightInfo)
                             );
