@@ -2,12 +2,12 @@ import java.io.Serializable;
 
 public class FlightSerializable implements Serializable {
 
-    private int flightsAmount;
-    private int flightsDelayed;
+    private double flightsAmount;
+    private double flightsDelayed;
     private double delayMaxValue;
     private double flightsCancelled;
 
-    public FlightSerializable(int flightsAmount, int flightsDelayed,
+    public FlightSerializable(double flightsAmount, double flightsDelayed,
                               double delayMaxValue, double flightsCancelled) {
         this.flightsAmount = flightsAmount;
         this.flightsDelayed = flightsDelayed;
@@ -51,11 +51,11 @@ public class FlightSerializable implements Serializable {
         );
     }*/
 
-    public int getFlightsAmount() {
+    public double getFlightsAmount() {
         return this.flightsAmount;
     }
 
-    public int getFlightsDelayed() {
+    public double getFlightsDelayed() {
         return this.flightsDelayed;
     }
 

@@ -83,11 +83,11 @@ public class AirportApp {
 
                                 "percentageDelayedFlights: " +
                                 pair._2.getFlightsDelayed() + " / " + pair._2.getFlightsAmount() + " * 100 = " +
-                                (pair._2.getFlightsDelayed() / pair._2.getFlightsAmount()) * 100 + " % | " +
+                                (pair._2.getFlightsDelayed() / pair._2.getFlightsAmount()) * 100f + " % | " +
 
                                 "percentageCancelledFlights: " +
                                 pair._2.getFlightsCancelled() + " / " + pair._2.getFlightsAmount() + " * 100 = " +
-                                (pair._2.getFlightsCancelled() / pair._2.getFlightsAmount()) * 100 + " %\n"
+                                (pair._2.getFlightsCancelled() / pair._2.getFlightsAmount()) * 100f + " %\n"
                 );
 
         result.saveAsTextFile("output");
