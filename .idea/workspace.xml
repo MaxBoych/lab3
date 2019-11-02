@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ca6fe414-a5b7-4925-a165-7bdef102575d" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Qwety/Qwety.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UtilitiesCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilitiesCSV.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/UtilitiesCSV.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+            <state relative-caret-position="161">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -93,9 +94,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/FlightInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/FlightSerializable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/UtilitiesCSV.java" />
         <option value="$USER_HOME$/hadoop-2.9.1/etc/hadoop/yarn-site.xml" />
         <option value="$PROJECT_DIR$/src/main/java/AirportApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/UtilitiesCSV.java" />
       </list>
     </option>
   </component>
@@ -185,12 +186,12 @@
       <updated>1572639175707</updated>
       <workItem from="1572639179889" duration="542000" />
       <workItem from="1572639874690" duration="23259000" />
-      <workItem from="1572726930974" duration="5822000" />
+      <workItem from="1572726930974" duration="5868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29623000" />
+    <option name="totallyTimeSpent" value="29669000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="960" height="988" extended-state="4" />
@@ -283,8 +284,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/UtilitiesCSV.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="44" lean-forward="true" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+        <state relative-caret-position="161">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
