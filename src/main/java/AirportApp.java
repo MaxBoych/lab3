@@ -16,6 +16,10 @@ public class AirportApp {
     private static final int DEST_AIRPORT_ID = 14;
     private static final int ARR_DELAY_NEW = 18;
     private static final int CANCELLED = 19;
+
+    private static final int AIRPORT_CODE = 0;
+    private static final int AIRPORT_NAME = 1;
+
     public static void main(String[] args) {
 
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
@@ -46,6 +50,14 @@ public class AirportApp {
 
         JavaRDD<String> airports = sparkContext.textFile(AIRPORTS_CSV);
         JavaRDD<String[]> airportsFiltered = airports.map(line -> UtilitiesCSV.parseAndFilter(line, 0));
+        JavaPairRDD<String, String> airportsPairs = airportsFiltered
+                .mapToPair(
+                        values -> new Tuple2<>(
+                                values[AIRPORT_CODE],
+                                values[AIRPORT_NAME]
+                        )
+                );
+
         
     }
 }
