@@ -5,10 +5,10 @@ public class FlightSerializable implements Serializable {
     private int flightsAmount;
     private int flightsDelayed;
     private double delayMaxValue;
-    private int flightsCancelled;
+    private double flightsCancelled;
 
     public FlightSerializable(int flightsAmount, int flightsDelayed,
-                              double delayMaxValue, int flightsCancelled) {
+                              double delayMaxValue, double flightsCancelled) {
         this.flightsAmount = flightsAmount;
         this.flightsDelayed = flightsDelayed;
         this.delayMaxValue = delayMaxValue;
@@ -63,7 +63,7 @@ public class FlightSerializable implements Serializable {
         return this.delayMaxValue;
     }
 
-    public int getFlightsCancelled() {
+    public double getFlightsCancelled() {
         return this.flightsCancelled;
     }
 }
