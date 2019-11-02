@@ -16,6 +16,8 @@ public class AirportApp {
     private static final int CANCELLED = 19;
     public static void main(String[] args) {
 
+        FlightSerializable f = new FlightSerializable(new FlightInfo("1", "2"));
+
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
 
@@ -27,7 +29,7 @@ public class AirportApp {
 
                         values -> new Tuple2<>(
                                 new Tuple2<>(values[ORIGIN_AIRPORT_ID], values[DEST_AIRPORT_ID]),
-                                new FlightSerializable(new FlightInfo(values[ARR_DELAY_NEW], values[CANCELLED]))
+                                new FlightSerializable(new FlightInfo("1", "2"))
                         )
                 );
 
