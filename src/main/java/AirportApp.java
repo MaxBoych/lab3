@@ -10,6 +10,8 @@ import scala.Tuple4;
 public class AirportApp {
 
     private static final String FLIGHTS_CSV = "/home/max/gitwatch/lab3/flights.csv";
+    private static final String AIRPORTS_CSV = "/home/max/gitwatch/lab3/flights.csv";
+
     private static final int ORIGIN_AIRPORT_ID = 11;
     private static final int DEST_AIRPORT_ID = 14;
     private static final int ARR_DELAY_NEW = 18;
@@ -18,6 +20,10 @@ public class AirportApp {
 
         SparkConf sparkConf = new SparkConf().setAppName("lab3");
         JavaSparkContext sparkContext = new JavaSparkContext(sparkConf);
+
+
+
+
 
         JavaRDD<String> flights = sparkContext.textFile(FLIGHTS_CSV);
         JavaRDD<String[]> flightsFiltered = flights.map(UtilitiesCSV::parseAndFilter);
@@ -36,6 +42,10 @@ public class AirportApp {
 
         JavaPairRDD<Tuple2<String, String>, FlightSerializable> flightsPairsSerializable = flightsPairs.reduceByKey(FlightSerializable::reduceFlights);
 
+
+
+
+        JavaRDD<String> airports = sparkContext.textFile(AIRPORTS_CSV);
         
     }
 }
