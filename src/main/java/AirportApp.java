@@ -7,6 +7,8 @@ import org.apache.spark.api.java.JavaSparkContext;
 import scala.Tuple2;
 import scala.Tuple4;
 
+import java.util.Map;
+
 public class AirportApp {
 
     private static final String FLIGHTS_CSV = "/home/max/gitwatch/lab3/flights.csv";
@@ -50,6 +52,7 @@ public class AirportApp {
 
         JavaRDD<String> airports = sparkContext.textFile(AIRPORTS_CSV);
         JavaRDD<String[]> airportsFiltered = airports.map(line -> UtilitiesCSV.parseAndFilter(line, 0));
+
         JavaPairRDD<String, String> airportsPairs = airportsFiltered
                 .mapToPair(
                         values -> new Tuple2<>(
@@ -58,6 +61,6 @@ public class AirportApp {
                         )
                 );
 
-        
+        Map<String, String> airportsMap = airportsPairs.collectAsMap();
     }
 }
