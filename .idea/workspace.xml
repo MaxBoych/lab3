@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca6fe414-a5b7-4925-a165-7bdef102575d" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../Qwety/Qwety.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirportApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirportApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UtilitiesCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UtilitiesCSV.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/AirportApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1206">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/FlightInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#451#452#0" expanded="true" />
                 <element signature="e#521#522#0" expanded="true" />
@@ -72,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/UtilitiesCSV.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="634">
-              <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+              <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -139,6 +137,11 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lab3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab3" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -179,16 +182,15 @@
       <option name="presentableId" value="Default" />
       <updated>1572639175707</updated>
       <workItem from="1572639179889" duration="542000" />
-      <workItem from="1572639874690" duration="16892000" />
+      <workItem from="1572639874690" duration="17142000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17434000" />
+    <option name="totallyTimeSpent" value="17684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="960" height="990" extended-state="4" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16411379" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -232,7 +234,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/FlightInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#451#452#0" expanded="true" />
             <element signature="e#521#522#0" expanded="true" />
@@ -260,14 +262,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/UtilitiesCSV.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
-          <caret line="61" column="5" lean-forward="true" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+          <caret line="61" column="5" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/AirportApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1206">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
