@@ -74,12 +74,20 @@ public class AirportApp {
                 .map(
                         pair -> "from " +
                                 airportsBroadcasted.value().get(pair._1._1) +
+
                                 " to " +
-                                airportsBroadcasted.value().get(pair._1._2) +
-                                " ||| " +
+                                airportsBroadcasted.value().get(pair._1._2) + " | " +
+
                                 "delayMaxValue: " +
-                                pair._2.getDelayMaxValue() +
-                                "percentage"
-                )
+                                pair._2.getDelayMaxValue() + " | " +
+
+                                "percentageDelayedFlights: " +
+                                (pair._2.getFlightsDelayed() / pair._2.getFlightsAmount()) * 100 + " % | " +
+
+                                "percentageCancelledFlights: " +
+                                (pair._2.getFlightsCancelled() / pair._2.getFlightsAmount()) * 100 + " %\n"
+                );
+
+        
     }
 }
