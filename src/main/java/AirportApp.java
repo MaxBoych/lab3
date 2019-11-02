@@ -79,7 +79,7 @@ public class AirportApp {
                                 " ||| " +
                                 "delayMaxValue: " +
                                 pair._2.getDelayMaxValue() +
-                                ""
+                                "percentage"
                 )
     }
 }
