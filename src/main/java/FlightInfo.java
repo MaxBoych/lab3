@@ -1,23 +1,23 @@
 public class FlightInfo {
 
-    private double delayed;
-    private double cancelled;
+    private int delayed;
+    private int cancelled;
 
     public FlightInfo(String delayed, String cancelled) {
         if (delayed.equals("")) {
             this.delayed = 0;
         } else {
-            this.delayed = Double.parseDouble(delayed);
+            this.delayed = Integer.parseInt(delayed);
         }
 
-        this.cancelled = Double.parseDouble(cancelled);
+        this.cancelled = Integer.parseInt(cancelled);
     }
 
-    public double getDelayed() {
+    public int getDelayed() {
         return this.delayed;
     }
 
-    public double getCancelled() {
+    public int getCancelled() {
         return this.cancelled;
     }
 }
