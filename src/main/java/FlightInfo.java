@@ -7,10 +7,10 @@ public class FlightInfo {
         if (delayed.equals("")) {
             this.delayed = 0;
         } else {
-            this.delayed = Integer.parseInt(delayed);
+            this.delayed = (int) Double.parseDouble(delayed);
         }
 
-        this.cancelled = Integer.parseInt(cancelled);
+        this.cancelled = (int) Double.parseDouble(cancelled);
     }
 
     public int getDelayed() {
